@@ -21,7 +21,20 @@
   },
   "homepage": "https://github.com/weshipcode/angular-jspm-seed#readme",
   "devDependencies": {
+    "chai": "^3.4.0",
     "eslint": "^1.7.2",
-    "mocha": "^2.3.3"
+    "http-server": "^0.8.5",
+    "jspm": "^0.16.13",
+    "karma": "^0.13.11",
+    "karma-mocha": "^0.2.0",
+    "karma-mocha-reporter": "^1.1.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "livereload": "^0.3.7",
+    "mocha": "^2.3.3",
+    "node-sass": "^3.3.3",
+    "opener": "^1.4.1",
+    "parallelshell": "^2.0.0",
+    "phantomjs": "^1.9.18",
+    "rimraf": "^2.4.3"
   }
 }
