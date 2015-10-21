@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/weshipcode/angular-jspm-seed#readme",
   "devDependencies": {
-    "eslint": "^1.7.2"
+    "eslint": "^1.7.2",
+    "mocha": "^2.3.3"
   }
 }
