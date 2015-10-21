@@ -1,0 +1,23 @@
+{
+  "name": "angular-jspm-seed",
+  "version": "1.0.0",
+  "description": "AngularJS 1.x seed project with JSPM and other awesome tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weshipcode/angular-jspm-seed.git"
+  },
+  "keywords": [
+    "angularjs",
+    "jspm"
+  ],
+  "author": "Marton Hipszki <mhipszki@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weshipcode/angular-jspm-seed/issues"
+  },
+  "homepage": "https://github.com/weshipcode/angular-jspm-seed#readme"
+}
