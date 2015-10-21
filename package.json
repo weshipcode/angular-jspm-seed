@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/weshipcode/angular-jspm-seed/issues"
   },
-  "homepage": "https://github.com/weshipcode/angular-jspm-seed#readme"
+  "homepage": "https://github.com/weshipcode/angular-jspm-seed#readme",
+  "devDependencies": {
+    "eslint": "^1.7.2"
+  }
 }
