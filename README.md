@@ -29,3 +29,11 @@ Karma is used to run our unit test suites found under `test/` folder.
 `$ npm run test`
 
 Before running tests, `npm` will run the `lint` task on Javascript files, to make sure that there's no linting issues.
+
+### Watching files
+
+All `.js` files are being watched under `app/` and `test/` folders. On any file change the `test` task is run, including the linting beforehand.
+
+```
+$ npm run watch:js
+```
