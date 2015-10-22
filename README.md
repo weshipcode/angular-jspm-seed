@@ -26,7 +26,9 @@ Every `.js` file under `app/` and `test/` folders will be linted.
 
 Karma is used to run our unit test suites found under `test/` folder.
 
-`$ npm run test`
+```
+$ npm run test
+```
 
 Before running tests, `npm` will run the `lint` task on Javascript files, to make sure that there's no linting issues.
 
