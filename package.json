@@ -7,8 +7,11 @@
     "pretest": "npm run lint -s",
     "test": "karma start --singleRun",
     "lint": "eslint app/ test/ && echo '\n...linting OK\n'",
+    "lint:sass": "scss-lint app/ && echo '\n...SASS linting OK\n'",
     "watch:js": "nodemon -q -e js -w app -w test --exec 'npm run test -s'",
-    "compile:sass": "node-sass --include-path app app/main.scss dist/main.css"
+    "watch:sass": "nodemon -q -e scss -w app --exec 'npm run compile:sass -s'",
+    "precompile:sass": "npm run lint:sass -s",
+    "compile:sass": "node-sass --include-path app app/main.scss dist/main.css && echo '\n...SASS compiled: dist/main.css\n'"
   },
   "repository": {
     "type": "git",

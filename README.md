@@ -32,6 +32,14 @@ $ npm run test
 
 Before running tests, `npm` will run the `lint` task on Javascript files, to make sure that there's no linting issues.
 
+### Linting SASS files
+
+The Ruby tool `scss_lint` is being used to lint `.scss` files under `app/` folder.
+
+```
+$ npm run lint:sass
+```
+
 ### Compiling SASS files
 
 Via `node-sass`, the efficient `lib-sass` library is used to compile `.scss` files.
@@ -42,10 +50,22 @@ The main entry point is `app/main.scss` which will be loaded and compiled into p
 $ npm run compile:sass
 ```
 
+Before compiling `.scss` files, linting is being run against them. Any linting error will prevent the SCSS compilation.
+
 ### Watching files
+
+#### Watching Javascript files
 
 All `.js` files are being watched under `app/` and `test/` folders. On any file change the `test` task is run, including the linting beforehand.
 
 ```
 $ npm run watch:js
+```
+
+#### Watching SASS files
+
+All `.scss` files are being watched under `app/` folder. On any file change the `compile:sass` task is run, including the SCSS linting beforehand.
+
+```
+$ npm run watch:sass
 ```
