@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 // Karma configuration
 // Generated on Thu Oct 22 2015 11:09:15 GMT+0100 (BST)
 
@@ -63,4 +65,4 @@ module.exports = function(config) {
 		// if true, Karma captures browsers, runs the tests and exits
 		singleRun: true
 	});
-}
+};
