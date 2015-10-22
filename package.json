@@ -6,7 +6,8 @@
   "scripts": {
     "pretest": "npm run lint -s",
     "test": "karma start --singleRun",
-    "lint": "eslint app/ test/"
+    "lint": "eslint app/ test/ && echo '\n...linting OK\n'",
+    "watch:js": "nodemon -q -e js -w app -w test --exec 'npm run test -s'"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "livereload": "^0.3.7",
     "mocha": "^2.3.3",
     "node-sass": "^3.3.3",
+    "nodemon": "^1.7.3",
     "opener": "^1.4.1",
     "parallelshell": "^2.0.0",
     "phantomjs": "^1.9.18",
