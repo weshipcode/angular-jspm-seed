@@ -12,7 +12,10 @@
     "watch:sass": "nodemon -q -e scss -w app --exec 'npm run compile:sass -s'",
     "precompile:sass": "npm run lint:sass -s",
     "compile:sass": "node-sass --include-path app app/main.scss dist/main.css && echo '\n...SASS compiled: dist/main.css\n'",
-    "clean:dist": "rimraf dist/*"
+    "clean:dist": "rimraf dist/*",
+    "precompile:js": "npm run test -s",
+    "compile:js": "echo '\n...JSPM bundling up Javascript files\n'",
+    "build": "npm run compile:sass -s && npm run compile:js -s"
   },
   "repository": {
     "type": "git",
