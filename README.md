@@ -30,6 +30,16 @@ Karma is used to run our unit test suites found under `test/` folder.
 
 Before running tests, `npm` will run the `lint` task on Javascript files, to make sure that there's no linting issues.
 
+### Compiling SASS files
+
+Via `node-sass`, the efficient `lib-sass` library is used to compile `.scss` files.
+
+The main entry point is `app/main.scss` which will be loaded and compiled into plain CSS in `dist/main.css`.
+
+```
+$ npm run compile:sass
+```
+
 ### Watching files
 
 All `.js` files are being watched under `app/` and `test/` folders. On any file change the `test` task is run, including the linting beforehand.
